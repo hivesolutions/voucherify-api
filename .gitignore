@@ -1,0 +1,10 @@
+*.pyc
+
+session.shelve*
+
+/.env
+/.venv
+
+/dist
+/build
+/src/voucherify_api.egg-info

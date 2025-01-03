@@ -3,7 +3,7 @@
 
 import appier
 
-BASE_URL = "https://www.easypay.pt/_s/"
+BASE_URL = "https://api.voucherify.io/v1/"
 """ The default base URL to be used for a production
 based environment, should be used carefully """
 

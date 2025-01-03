@@ -11,7 +11,10 @@ class SimpleApp(appier.APIApp):
     def __init__(self, *args, **kwargs):
         appier.APIApp.__init__(self, name="mb", *args, **kwargs)
         self.api = base.get_api()
-        self.api.bind("paid", self.on_paid)
+
+    @appier.route("/customers", "GET")
+    def customers(self):
+        return self.api.list_customers()
 
 
 if __name__ == "__main__":

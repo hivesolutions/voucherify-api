@@ -6,7 +6,7 @@ import setuptools
 
 setuptools.setup(
     name="voucherify-api",
-    version="0.3.11",
+    version="0.1.0",
     author="Hive Solutions Lda.",
     author_email="development@hive.pt",
     description="Voucherify API Client",

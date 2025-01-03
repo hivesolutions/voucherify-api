@@ -9,7 +9,7 @@ import base
 class SimpleApp(appier.APIApp):
 
     def __init__(self, *args, **kwargs):
-        appier.APIApp.__init__(self, name="mb", *args, **kwargs)
+        appier.APIApp.__init__(self, name="simple", *args, **kwargs)
         self.api = base.get_api()
 
     @appier.route("/customers", "GET")

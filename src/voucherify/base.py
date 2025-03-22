@@ -5,6 +5,7 @@ import appier
 
 from . import order
 from . import customer
+from . import redemption
 from . import validation
 
 BASE_URL = "https://api.voucherify.io/v1/"
@@ -12,7 +13,13 @@ BASE_URL = "https://api.voucherify.io/v1/"
 based environment, should be used carefully """
 
 
-class API(appier.API, order.OrderAPI, customer.CustomerAPI, validation.ValidationAPI):
+class API(
+    appier.API,
+    order.OrderAPI,
+    customer.CustomerAPI,
+    redemption.RedemptionAPI,
+    validation.ValidationAPI,
+):
 
     def __init__(self, *args, **kwargs):
         appier.API.__init__(self, *args, **kwargs)
